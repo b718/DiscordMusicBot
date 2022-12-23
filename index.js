@@ -82,7 +82,8 @@ cisumClient.on("ready", () => {
     message.channel.send("Status changed!");
   });
 
-  command(cisumClient, "help", (message) => {
+  function test() {
+    console.log("inhere");
     message.channel.send(`
       These are my supported commands:
       **!cc/clearchannel** - To clear the current server text!
@@ -90,7 +91,9 @@ cisumClient.on("ready", () => {
       **!ping/test** - Responds with pong!
       **/play **url - Can play a video given the youtube url!
       `);
-  });
+  }
+
+  command(cisumClient, "help", test);
 
   // When doing slash commands, there are guilds and global!
   // - Global is for every server, so we should first test with guilds before global!
