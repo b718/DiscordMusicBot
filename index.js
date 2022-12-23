@@ -112,7 +112,7 @@ cisumClient.on("ready", () => {
 
   commands.create({
     name: "emn",
-    description: "Replies with eat my nuts (emn)",
+    description: "Replies with eat many nutrients.",
   });
 
   commands.create({
@@ -156,7 +156,7 @@ cisumClient.on("ready", () => {
   //Make a slash command that plays a meow clip later!
   commands.create({
     name: "meow",
-    description: 'Plays a clip of Pokimane saying "meow"',
+    description: "Plays an audio clip",
   });
 
   //Make a slash command that plays a meow clip later!
@@ -442,7 +442,7 @@ cisumClient.on("messageCreate", (messagePing) => {
 cisumClient.on("messageCreate", (messageMad) => {
   if (messageMad.content === "mad?") {
     messageMad.reply({
-      content: "how bout you get some bitches!",
+      content: "how bout you get some!",
     });
   }
 });
